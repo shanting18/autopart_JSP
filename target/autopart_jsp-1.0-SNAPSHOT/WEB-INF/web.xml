@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>SvCategoria</servlet-name>
+        <servlet-class>servlets.SvCategoria</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvUsuario</servlet-name>
+        <servlet-class>servlets.SvUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvVendedor</servlet-name>
+        <servlet-class>servlets.SvVendedor</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvRepuesto</servlet-name>
+        <servlet-class>servlets.SvRepuesto</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SvCategoria</servlet-name>
+        <url-pattern>/SvCategoria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvUsuario</servlet-name>
+        <url-pattern>/SvUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvVendedor</servlet-name>
+        <url-pattern>/SvVendedor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvRepuesto</servlet-name>
+        <url-pattern>/SvRepuesto</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
